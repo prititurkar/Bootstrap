@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">iCoder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">image</a></li>
+              <li><a class="dropdown-item" href="#">download</a></li>
+              <li><a class="dropdown-item" href="#">help</a></li>
+              <li><a class="dropdown-item" href="#">short cut</a></li>
+              <li><a class="dropdown-item" href="">About</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/contact.html">Contact Us</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Button trigger modal
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="LoginModal">
+  Launch demo modal
+</button> -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="LoginModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+  <span class="input-group-text" id="basic-addon2">@example.com</span>
+</div>
+
+<div class="mb-3">
+  <label for="basic-url" class="form-label">Your vanity URL</label>
+  <div class="input-group">
+    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+  </div>
+  <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-text">.00</span>
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+  <span class="input-group-text">@</span>
+  <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+</div>
+
+<div class="input-group">
+  <span class="input-group-text">With textarea</span>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SignUpModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://images.unsplash.com/photo-1504969452-3a3567e73abe?w=500&h=130&auto=format&fit=crop&q=30&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvZGluZyUyMGh0bWx8ZW58MHx8MHx8fDA%3D"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to iCoder</h2>
+          <p>Technology news, and Devlopment</p>
+          <button class="btn btn-danger">Technology</button>
+          <button class="btn btn-success">Web Devlopment</button>
+          <button class="btn btn-primary">Tech fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1661416570570-471b0ad55a62?w=500&h=130&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHx8"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>The best coding blog</h2>
+          <p>Technology news, and Devlopment</p>
+          <button class="btn btn-danger">Technology</button>
+          <button class="btn btn-success">Web Devlopment</button>
+          <button class="btn btn-primary">Tech fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1678565202049-9e37b2da8060?w=500&h=130&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGh0bWwlMjBjb2RlfGVufDB8fDB8fHww"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Award winning Blog</h2>
+          <p>Technology news, and Devlopment</p>
+          <button class="btn btn-danger">Technology</button>
+          <button class="btn btn-success">Web Devlopment</button>
+          <button class="btn btn-primary">Tech fun</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static"> <strong
+              class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+            <h3 class="mb-0"> Global conferences </h3>
+            <div class="mb-1 text-body-secondary">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p> <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#chevron-right"></use>
+              </svg> </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250"
+              src="https://images.unsplash.com/photo-1759244336115-c68d0adf6f57?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8"
+              alt="...">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static"> <strong
+              class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+            <h3 class="mb-0">Technology</h3>
+            <div class="mb-1 text-body-secondary">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p> <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#chevron-right"></use>
+              </svg> </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250"
+              src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Ym13fGVufDB8fDB8fHww"
+              alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static"> <strong
+              class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+            <h3 class="mb-0"> Global conferences </h3>
+            <div class="mb-1 text-body-secondary">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p> <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#chevron-right"></use>
+              </svg> </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250"
+              src="https://images.unsplash.com/photo-1544961371-516024f8e267?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hdHVyZSUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D"
+              alt="...">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static"> <strong
+              class="d-inline-block mb-2 text-success-emphasis">Technology</strong>
+            <h3 class="mb-0">Nature</h3>
+            <div class="mb-1 text-body-secondary">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p> <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#chevron-right"></use>
+              </svg> </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250"
+              src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww"
+              alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hey">
+    <div class="col-md-8 mx-auto text-center">
+      <h4 class="fw-semibold">Read our getting started guides</h4>
+      <p>Get a jump on including Bootstrap's source files in a new project with our official guides.</p>
+      <div class="d-flex flex-wrap align-items-center justify-content-center gap-4 mt-4"> <a
+          class="d-flex flex-column align-items-center text-decoration-none animate-img"
+          href="/docs/5.3/getting-started/webpack/"> <img class="d-block mb-2"
+            src="https://images.unsplash.com/photo-1729982672119-5de13b8b7a85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Q0R3dXdYSkFiRXd8fGVufDB8fHx8fA%3D%3D"
+            alt="" width="72" height="72" loading="lazy"> <span class="text-body-secondary">Webpack</span> </a> <a
+          class="d-flex flex-column align-items-center text-decoration-none animate-img"
+          href="/docs/5.3/getting-started/parcel/"> <img class="d-block mb-2"
+            src="https://images.unsplash.com/photo-1562813733-b31f71025d54?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="" width="72" height="72" loading="lazy"> <span class="text-body-secondary">Parcel</span> </a> <a
+          class="d-flex flex-column align-items-center text-decoration-none animate-img"
+          href="/docs/5.3/getting-started/vite/"> <img class="d-block mb-2"
+            src="https://plus.unsplash.com/premium_photo-1685086785054-d047cdc0e525?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29kaW5nfGVufDB8fDB8fHww"
+            alt="" width="72" height="72" loading="lazy"> <span class="text-body-secondary">Vite</span> </a> </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
